@@ -2,8 +2,10 @@ import csv
 import sys
 
 from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
-
+#from sklearn.neighbors import KNeighborsClassifier
+#from sklearn.naive_bayes import GaussianNB
+#from sklearn.linear_model import Perceptron
+from sklearn import svm
 TEST_SIZE = 0.4
 
 
@@ -95,7 +97,7 @@ def train_model(evidence, labels):
     Given a list of evidence lists and a list of labels, return a
     fitted k-nearest neighbor model (k=1) trained on the data.
     """
-    return KNeighborsClassifier(n_neighbors=1).fit(evidence, labels)
+    return svm.SVC().fit(evidence, labels)
 
     
 def evaluate(labels, predictions):
