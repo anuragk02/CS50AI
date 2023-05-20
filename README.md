@@ -1,1 +1,1 @@
-# anuragk02
+Here are some of the projects I built while completing CS50's AI course. Each project has it's own branch, they implement some fun concepts in AI including Knowledge, Inference, NLP and Machine Learning. Enjoy!
